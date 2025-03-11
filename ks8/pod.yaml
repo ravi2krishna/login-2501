@@ -6,7 +6,7 @@ metadata: # dictonary
   name: nginx-pod
 spec: # dictonary
   containers: # list
-  - name: c1
-  image: nginx
-  ports: # list
-  - containerPort: 80
+    - name: c1
+      image: nginx
+      ports: # list
+        - containerPort: 80
