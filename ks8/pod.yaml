@@ -1,7 +1,7 @@
 # Create nginx Pod
 # kubectl run nginx-pod --image nginx --port=80
 apiVersion: v1 # key: value
-kind: pod # key: value
+kind: Pod # key: value
 metadata: # dictonary
   name: nginx-pod
 spec: # dictonary
