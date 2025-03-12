@@ -1,0 +1,14 @@
+# Create Multi Container Pod
+apiVersion: v1 
+kind: Pod
+metadata: 
+  name: mutli-container-pod
+spec: 
+  containers: 
+  - name: build
+    image: ubuntu:22.04
+    command: ['sh', '-c', 'echo "hello, Kubernetes!" && sleep 3600']
+  - name: deployment
+    image: nginx
+    ports: 
+    - containerPort: 80
