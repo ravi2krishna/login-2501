@@ -1,13 +1,12 @@
-# create nginx pod
+# Create Nginx Pod
 # Kubectl run nginx-pod --image nginx --port=80
-apiVersion: v1 # key: value 
+apiVersion: v1 # key: value
 kind: Pod # key: value
-metadata: # dictionary 
-  name: linux-pod 
+metadata: # dictionary
+  name: nginx-pod
 spec: # dictionary
   container: # list
-  - name: c1
-    image: nginx
-    Ports: 
-    - container: 80
-    
+  -name: C1
+  image: nginx
+  ports: 
+  - container: 80
