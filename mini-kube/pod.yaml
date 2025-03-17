@@ -9,4 +9,4 @@ spec: # dictionary
   - name: c1
     image: nginx
   ports:
-  - containerport: 80
+   - containerport: 80
