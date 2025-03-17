@@ -1,5 +1,4 @@
 # Create Multi Container Pod
-# kubectl run nginx-pod --image nginx --port=80
 apiVersion: v1
 kind: pod 
 metadata: 
