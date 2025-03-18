@@ -1,6 +1,6 @@
 # Create Multi Container Pod
-apiVersion: v1
-kind: pod 
+apiVersion: v1  
+kind: Pod 
 metadata: 
   name: multi-pod-fail 
 spec: 
