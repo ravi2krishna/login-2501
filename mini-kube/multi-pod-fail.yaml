@@ -1,7 +1,6 @@
 # Create Multi Container Pod
-# kubectl run nginx-pod --image nginx --port=80
-apiVersion: v1
-kind: pod 
+apiVersion: v1  
+kind: Pod 
 metadata: 
   name: multi-pod-fail 
 spec: 
@@ -13,4 +12,8 @@ spec:
   - name: c2
     image: nginx
   ports:
+<<<<<<< HEAD
    - containerport: 80
+=======
+   - containerport: 80
+>>>>>>> origin/mini-kube
