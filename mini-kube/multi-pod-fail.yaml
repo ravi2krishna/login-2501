@@ -1,8 +1,4 @@
 # Create Multi Container Pod
-# Create Multi Container Pod -1
-# Create Multi Container Pod -2
-# Create Multi Container Pod -3
-
 apiVersion: v1  
 kind: Pod 
 metadata: 
