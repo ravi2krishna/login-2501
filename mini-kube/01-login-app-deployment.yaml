@@ -1,0 +1,20 @@
+# Deployment for updating PODS & REPLICASETS
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: login
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: login
+  template:
+    metadata:
+      labels:
+        app: login
+    spec:  # <--- Make sure "spec" is here, NOT "spec.spec"
+      containers:
+        - name: login
+          image: kalyangali12/login-2501
+          ports:
+            - containerPort: 80
