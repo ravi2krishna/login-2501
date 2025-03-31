@@ -1,0 +1,20 @@
+# Deployment for updating PODS & REPLICASETS
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ecomm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ecomm
+  template:
+    metadata:
+      labels:
+        app: ecomm
+    spec:  # <--- Make sure "spec" is here, NOT "spec.spec"
+      containers:
+        - name: ecomm
+          image: kalyangali12/ecomm
+          ports:
+            - containerPort: 80
