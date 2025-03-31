@@ -15,7 +15,7 @@ spec:
     spec:  # <--- Make sure "spec" is here, NOT "spec.spec"
       containers:
         - name: my-container
-          image: kalyangali12/login-2501:1.1
+          image: kalyangali12/login-2501:2.1
           ports:
             - containerPort: 80
 
