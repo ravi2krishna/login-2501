@@ -2,19 +2,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-    name: login
+  name: my-deployment
 spec:
-    replicas: 1
-    selector:
-      matchLabels:
-        app: login
-    template:
-      metadata:
-        labels:
-          app: login
-    spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:  # <--- Make sure "spec" is here, NOT "spec.spec"
       containers:
-      - name: login
-        image: kalyangali12/login2501:1.1
-        ports:
-        - containerPort: 80
+        - name: my-container
+          image: kalyangali12/login-2501:1.1
+          ports:
+            - containerPort: 80
+
