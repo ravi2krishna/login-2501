@@ -1,0 +1,6 @@
+
+        - name: login
+          replicasets: 1
+          app: login
+          image: kalyangali12/login-2501
+        - containerPort: 80

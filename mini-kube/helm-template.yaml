@@ -1,0 +1,20 @@
+# Deployment for updating PODS & REPLICASETS
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ____________________________________
+spec:
+ replicas: ________________________________
+  selector:
+    matchLabels:
+      app: _________________________________
+ template:
+    metadata:
+      labels:
+        app: _________________________________
+    spec:  
+      containers:
+        - name: ______________________________
+          image: _____________________________
+          ports:
+        - containerPort: ______________________
